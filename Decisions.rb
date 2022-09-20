@@ -82,3 +82,26 @@ puts false && this_will_cause_an_error
 # all subsequent expressions as soon as the first true sub-expression is encountered.
 puts true || this_will_cause_an_error
 # puts false || this_will_cause_an_error
+
+# Whenever you need to use If-elseif statements, you should consider using
+# the Ruby case statement. In other programming langues it's know as a switch
+# statement
+# The components of the Ruby case statement are:
+# case - starts a case statement definition. Takes the cariable you are going
+# to work with.
+# when - every condition that can be mathced is one when statement.
+# else - if nothing matches then else will be executed. This is optional.
+capacity = 250
+
+case capacity
+when 0
+    puts 'You ran out of gas'
+when 1..20
+    puts 'The tank is almost empty. Quickly find a gas station.'
+when 21..70
+    puts 'You should be ok for now.'
+when 71..100
+    puts 'The tank is almost full.'
+else 
+    puts "Error: capacity has an invalid value #{capacity}"
+end
