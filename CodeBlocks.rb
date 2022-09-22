@@ -11,7 +11,7 @@
 # This is how you pass a curly braces code block to a method.
 3.times {puts 'Hiya there kiddo!'}
 
-# This is how you pass a do end ocde block to a method
+# This is how you pass a do end code block to a method
 3.times do
     puts 'Hiya there kiddo!'
 end
@@ -77,7 +77,7 @@ puts
 3.upto(6) {|i| print i}
 
 # Code blocks may be returned by functions, but first they must be converted into
-# Proc objects. Ruby has a function named lambda that converts a code blcok into
+# Proc objects. Ruby has a function named lambda that converts a code block into
 # a Proc object.
 def n_times thing
     lambda {|n| thing * n}
